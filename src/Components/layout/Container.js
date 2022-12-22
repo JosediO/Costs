@@ -2,7 +2,10 @@ import styles from './Container.css'
 
 function Container(props){
     return(
-        <div className={styles.container}>{props.children}</div>
+        <div className={'container'}>
+            <div>{props.children}</div>
+        </div>
+        
     )
 }
 export default Container

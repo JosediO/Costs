@@ -1,0 +1,23 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    color: #ffffff;
+    background-color: #252525;
+    font-weight: bold;
+    list-style: none;
+}
+
+
+
+.socialList{
+    display: flex;
+    
+}
+
+.span{
+    color: #f1f500;
+    
+}

@@ -1,8 +1,12 @@
 .container{
     display: flex;
-    background-color: lightgray;
     width: 80%;
+    height: 80%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    border: 1px solid red;
 }
 
+.min-height{
+    min-height: 75%;
+}

@@ -4,20 +4,15 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './Components/pages/Home';
 import Empresa from './Components/pages/Empresa'
 import Contato from './Components/pages/Contato';
+
 import Container from './Components/layout/Container';
-
-import NavBar from './Components/layout/NavBar';
-import Footer from './Components/layout/Footer';
-
-
+import Footer from './Components/layout/Footer/Footer';
+import Header from './Components/layout/Header/Header';
 function App() {
   return (
     <>
     <BrowserRouter>
-    <div className='App'>
-      <h1 >Costs</h1>
-    </div>
-    <NavBar/>
+    <Header/>
     <Container>
     <Routes >
       <Route path='/' element={<Home/>} exact/>
