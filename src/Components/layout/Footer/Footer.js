@@ -4,7 +4,7 @@ import './Footer.css'
 
 function Footer(){
     return(
-        <div className='footer'>
+        <footer className='footer'>
             <div>
                 <ul className='socialList'>
                     <li>
@@ -18,8 +18,10 @@ function Footer(){
                     </li>
                 </ul>
             </div>
+            <div>
             <span className='span'>Costs </span> &copy; 2022
-        </div>
+            </div>
+        </footer>
     )
 }
 

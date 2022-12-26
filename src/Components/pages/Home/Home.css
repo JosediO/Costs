@@ -1,0 +1,28 @@
+.home{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home span{
+    color: #ffbb33;
+    font-weight: bold;
+    background-color: #222;
+    padding: 0.1em;
+}
+
+.home p{
+    font-weight: bold;
+    margin: 0.5em;
+}
+
+.home h1{
+    margin: 0.5em;
+}
+
+.home img{
+    width: 20em;
+    margin: 0.5em;
+}

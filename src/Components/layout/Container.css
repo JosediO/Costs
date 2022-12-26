@@ -1,12 +1,17 @@
-.container{
+.Container{
     display: flex;
     width: 80%;
-    height: 80%;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 75vh;
 }
 
-.min-height{
-    min-height: 75%;
+.star{
+    justify-content: flex-start;
+}
+
+.colum{
+    flex-direction: column;
+    justify-content: flex-start;
 }

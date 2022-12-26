@@ -1,12 +1,12 @@
 import React from "react"
 
-function Empresa (){
+function Projetos (){
     return (
         <>
-            <h1>Empresa</h1>
+            <h1>Projetos</h1>
             
         </>
     )
 }
 
-export default Empresa
+export default Projetos

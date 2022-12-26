@@ -3,6 +3,7 @@
     flex-direction: row;
     list-style: none;
     font-weight: bold;
+    padding-right: 2em;
     
 }
 
@@ -13,5 +14,5 @@
  }
 
  .Lista a:hover{  
-    color: #f1f500;  
+    color: #ffbb33;  
  }
