@@ -1,14 +1,14 @@
-import ProjectForm from '../Project/ProjectForm'
+import ProjectForms from '../Project/ProjectForms'
 
-import './NovoProjeto.css'
+import '../pages/NovoProjeto.css'
 
 function NovoProjeto(){
     return(
         <>
-            <div className='newproject'>
+            <div className="newproject">
                 <h1>Criar Projeto</h1>
                 <p>Crie agora seu novo projeto!</p>
-                <ProjectForm/>
+                <ProjectForms btnText="Criar Projeto"/>
             </div>
         </>
     )

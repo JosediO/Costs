@@ -1,7 +1,8 @@
 .newproject{
     width: 25em;
     margin: 0 auto;
-    padding: 4em;
+    padding: 1.3em ;
+    background-color: #dbd7d7;
 }
 
 .newproject h1{
