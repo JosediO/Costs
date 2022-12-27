@@ -1,6 +1,5 @@
 import React from "react"
 import './Home.css';
-import { Link } from "react-router-dom";
 import logoHome from '../../../img/savings.svg'
 import Linkbtn from "./Linkbtn";
 
