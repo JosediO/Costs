@@ -10,7 +10,7 @@ function Home (){
             <h1>Bem vindo ao <span>Costs</span></h1>
             <p>O seu gerenciador de projetos!</p>
             <img src={logoHome} alt="Costs" />
-            <Linkbtn exact to='/novoProjeto' text="Projetar!"/>
+            <Linkbtn exact to='/novoProjeto' text="Criar Projeto"/>
         </section>
         </>
     )

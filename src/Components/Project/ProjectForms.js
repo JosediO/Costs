@@ -4,22 +4,14 @@ import SubmitBtn from "../Form/SubmitBtn"
 
 import './ProjectForms.css'
 
-function ProjectForms({btnText}){
+function ProjectForms(){
     return(
         <form className="form">
-            <div>
                 <Input type="text" text="Nome" placeholder="Digite o nome" name="name"/>
-            </div>
-
-            <div>
                 <Input type="number" text="Orçamento " placeholder="Digite o orçamento" name="budget"/>
-            </div>
-            <div>
-                <Select name="id" text="Selecione a categoria"/>
-            </div>
-            <div>
-                <SubmitBtn text={btnText}/>
-            </div>
+                <Select name="category_id" text="Selecione a categoria"/>
+                <SubmitBtn />
+
         </form>
     )
 }

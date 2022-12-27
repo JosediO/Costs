@@ -1,9 +1,9 @@
 import './SubmitBtn.css'
 
-function SubmitBtn({text}){
+function SubmitBtn(text){
     return(
-           <div className="btn">
-                <button text={text} ></button>
+           <div >
+                <button className="btn"> Criar Projeto</button>
            </div>
     )
 }
