@@ -26,6 +26,27 @@
       "cost": 0,
       "services": [],
       "id": 3
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "JOSEDI OLIVEIRA DA SILVA VIEIRA",
+      "budget": "1",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "cost": 0,
+      "services": [],
+      "id": 6
     }
   ],
   "categories": [
