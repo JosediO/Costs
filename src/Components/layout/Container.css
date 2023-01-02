@@ -7,8 +7,9 @@
     min-height: 75vh;
 }
 
-.star{
+.start{
     justify-content: flex-start;
+    border: red;
 }
 
 .colum{

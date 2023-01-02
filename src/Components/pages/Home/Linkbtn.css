@@ -3,19 +3,15 @@
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    margin: 0.5em;
-    width: 10em;
-    height: 3em;
+    margin: 0.7em;
+    width: 7.5em;
+    height: 1.8em;
     border: none;
     background-color: #222;
-    border-radius: 0.5em;
     color: #ffffff;
-    font-size: large;
     transition: 0.5s;
 }
 
 .Linkbtn:hover{
-    border-radius: 0.5em;
     color: #ffbb33;
-    font-size: large;
 }
