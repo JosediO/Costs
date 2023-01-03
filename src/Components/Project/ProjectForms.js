@@ -4,7 +4,7 @@ import Input from "../Form/Input"
 import Select from "../Form/Select"
 import SubmitBtn from "../Form/SubmitBtn"
 
-import './ProjectForms.module.css'
+import styles from './ProjectForms.module.css'
 
 function ProjectForms({handleSubmit, projectData}){
 
@@ -42,7 +42,7 @@ function ProjectForms({handleSubmit, projectData}){
     }
 
     return(
-        <form onSubmit={submit} className="form">
+        <form onSubmit={submit} className={styles.form}>
                 <Input 
                 type="text" 
                 text="Nome"
