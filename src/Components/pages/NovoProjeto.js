@@ -2,7 +2,7 @@ import {useNavigate} from 'react-router-dom'
 
 import ProjectForms from '../Project/ProjectForms'
 
-import '../pages//NovoProjeto.css'
+import styles from './../pages/NovoProjeto.module.css'
 
 function NovoProjeto(){
    
@@ -31,7 +31,7 @@ function NovoProjeto(){
    
     return(
         <>
-            <div className="newproject">
+            <div className={styles.newproject}>
                 <h1>Criar Projeto</h1>
                 <p>Crie agora seu novo projeto!</p>
                 <ProjectForms handleSubmit={createPost}/>

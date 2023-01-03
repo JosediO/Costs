@@ -1,10 +1,10 @@
-import './ProjectCard.css';
+import styles from './ProjectCard.module.css';
 
 import {BsPencil, BsFillTrashFill} from 'react-icons/bs'
 
 function ProjectCard({id,name,budget,category,handleRemove}){
     return(
-        <div className='project_card'>
+        <div className={styles.project_card}>
             <h4>{name}</h4>
             <p>
                 <span>Orçamento</span> R$:{budget}

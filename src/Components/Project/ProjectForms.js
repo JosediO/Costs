@@ -4,7 +4,7 @@ import Input from "../Form/Input"
 import Select from "../Form/Select"
 import SubmitBtn from "../Form/SubmitBtn"
 
-import './ProjectForms.css'
+import './ProjectForms.module.css'
 
 function ProjectForms({handleSubmit, projectData}){
 

@@ -1,6 +1,6 @@
-.Container{
+.container{
     display: flex;
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
     justify-content: space-between;
     flex-wrap: wrap;

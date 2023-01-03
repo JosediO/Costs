@@ -5,7 +5,7 @@ import Message from "../layout/Message"
 import Container from '../layout/Container'
 import Linkbtn from "./Home/Linkbtn"
 
-import './Projetos.css'
+import styles from './Projetos.module.css'
 import ProjectCard from "../Project/ProjectCard"
 
 function Projetos (){
@@ -32,8 +32,8 @@ function Projetos (){
         .catch((err)=> (console.log(err)))
     },[])
     return (
-        <div className="project_container">
-            <div className="title_container">
+        <div className={styles.project_container}>
+            <div className={styles.title_container}>
             <h1>Projetos</h1>
             <Linkbtn to="/novoprojeto" text="Criar Projeto"/>
             </div>
