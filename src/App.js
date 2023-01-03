@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './Components/pages/Home/Home';
 import Projetos from './Components/pages/Projetos'
@@ -18,7 +17,7 @@ function App() {
     <div className='App'>
     <BrowserRouter>
           <Header />
-          <Container>
+          <Container customClass="min-height">
             <Routes >
               <Route path='/' element={<Home />}/>
               <Route path='/Projetos' element={<Projetos />} />

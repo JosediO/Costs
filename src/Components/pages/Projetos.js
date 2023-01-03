@@ -6,6 +6,7 @@ import Container from '../layout/Container'
 import Linkbtn from "./Home/Linkbtn"
 
 import './Projetos.css'
+import ProjectCard from "../Project/ProjectCard"
 
 function Projetos (){
 
@@ -26,6 +27,7 @@ function Projetos (){
         })
         .then((resp)=> resp.json())
         .then((data)=> {
+            console.log(data);
             setProjects(data)})
         .catch((err)=> (console.log(err)))
     },[])
@@ -36,10 +38,16 @@ function Projetos (){
             <Linkbtn to="/novoprojeto" text="Criar Projeto"/>
             </div>
             {message && <Message type="sucess" msg={message} />}
-            <Container customClass="start" >
+            <Container>
                 {projects.length > 0 &&
-                    projects.map((project) =>(
-                        
+                    projects.map((project) =>( 
+                        <ProjectCard 
+                        id={project.id}
+                        name={project.name}
+                        budget={project.budget}
+                        category={project.category?project.category.name: null}
+                        key={project.id}
+                        />
                     ))
                 }
             </Container>
