@@ -1,22 +1,21 @@
-.msg{
-    width: 100%;
-    border: 1px solid #252525;
-    border-radius: 5px;
-    margin: 0 auto;
+.message {
+    width: 75%;
     padding: 0.5em;
+    border: 1px solid #000;
+    margin: 0 auto;
     text-align: center;
-}
-
-.sucess{
-    border-color: #155724;
+    border-radius: 5px;
+    margin-left: 0.5em;
+  }
+  
+  .success {
     color: #155724;
-    background-color: #D4EEDA;
-    font-weight: bold;
-}
-
-.error{
-    border-color: #721C24;
-    color: #721C24;
-    background-color: #F8D7DA;
-    font-weight: bold;
-}
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  .error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }

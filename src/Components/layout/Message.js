@@ -1,6 +1,6 @@
 import { useState,useEffect } from 'react'
 
-import './Message.module.css'
+import styles from './Message.module.css'
 
 function Message({type, msg}){
 
@@ -24,7 +24,7 @@ function Message({type, msg}){
     return(
     <>
        {visible &&(
-         <div className={`msg ${type}`}>{msg}</div>
+         <div className={`${styles.message} ${styles[type]}`}>{msg}</div>
        )}
         </>
     )
