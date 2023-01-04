@@ -1,8 +1,8 @@
-import './Select.css'
+import styles from './Select.module.css'
 
 function Select({text , name, options, handleOnChange, value }){
     return(
-           <div className="form">
+           <div className={styles.form}>
                 <label htmlFor={name}>{text}</label>
             <select 
                 name={name} 

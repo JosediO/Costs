@@ -1,7 +1,7 @@
 .form{
     display: flex;
     flex-direction: column;
-    margin-bottom: 0.5 em;
+    margin-bottom: 1em;
 }
 
 .form label{
@@ -9,12 +9,12 @@
     margin: 0.7em;
 }
 
-.form select {
-    padding: 0.5em;
+.form input {
+    padding: 0.7em;
     border-radius: 0;
     border: none;
 }
 
-.form select {
+.form input::placeholder {
     color: #747474;
 }

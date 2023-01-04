@@ -1,9 +1,9 @@
-import './SubmitBtn.css'
+import styles from './SubmitBtn.module.css'
 
 function SubmitBtn(text){
     return(
            <div >
-                <button className="btn"> Criar Projeto</button>
+                <button className={styles.btn}> Criar Projeto</button>
            </div>
     )
 }
