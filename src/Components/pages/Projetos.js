@@ -4,9 +4,11 @@ import { useEffect, useState } from "react"
 import Message from "../layout/Message"
 import Container from '../layout/Container'
 import Linkbtn from "./Home/Linkbtn"
+import ProjectCard from "../Project/ProjectCard"
+import Loading from "../layout/Loading"
 
 import styles from './Projetos.module.css'
-import ProjectCard from "../Project/ProjectCard"
+
 
 function Projetos (){
 
@@ -17,9 +19,11 @@ function Projetos (){
     }
 
     const [projects,setProjects] = useState([])
+    const [removeLoading,setRemoveLoading] = useState(false)
 
     useEffect(() =>{
-        fetch('http://localhost:5000/projects',{
+        setTimeout(()=>(
+            fetch('http://localhost:5000/projects',{
             method: 'GET',
             headers: {
                 'Content-type':'application/json',
@@ -27,9 +31,11 @@ function Projetos (){
         })
         .then((resp)=> resp.json())
         .then((data)=> {
-            // console.log(data);
-            setProjects(data)})
+            setProjects(data)
+            setRemoveLoading(true)
+        })
         .catch((err)=> (console.log(err)))
+        ),1000)
     },[])
     return (
         <div className={styles.project_container}>
@@ -49,8 +55,8 @@ function Projetos (){
                         category={project.category?project.category.name: null}
                         key={project.id}
                         />
-                    ))
-                }
+                ))}
+                {!removeLoading && <Loading/> }
             </Container>
         </div>
     )
