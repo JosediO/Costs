@@ -21,17 +21,6 @@
       "cost": 0,
       "services": [],
       "id": 2
-    },
-    {
-      "name": "Apaga ai e Testa",
-      "budget": "1233123123",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
     }
   ],
   "categories": [
