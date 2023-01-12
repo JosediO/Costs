@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Teste",
-      "budget": "5000",
+      "budget": "50000",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -21,6 +21,17 @@
       "cost": 0,
       "services": [],
       "id": 2
+    },
+    {
+      "name": "Josedi Workspace",
+      "budget": "50000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 3
     }
   ],
   "categories": [

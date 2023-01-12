@@ -58,8 +58,10 @@ function Projetos (){
         <div className={styles.project_container}>
             <div className={styles.title_container}>
             <h1>Projetos</h1>
+            <div>
             {message && <Message type="success" msg={message} />}
-            {projectMessage && <Message type="success" msg={projectMessage} />}
+            </div>
+            <div>{projectMessage && <Message type="success" msg={projectMessage} />}</div>
             <Linkbtn to="/novoprojeto" text="Criar Projeto"/>
             </div>
             

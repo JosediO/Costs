@@ -6,7 +6,7 @@ import SubmitBtn from "../Form/SubmitBtn"
 
 import styles from './ProjectForms.module.css'
 
-function ProjectForms({handleSubmit, projectData}){
+function ProjectForms({handleSubmit, btnText, projectData}){
 
     const [categories,setCategorias] = useState([])
     const [project,setProject] = useState(projectData || {})
@@ -68,7 +68,7 @@ function ProjectForms({handleSubmit, projectData}){
                 handleOnChange ={handleCategory}
                 value={project.category ? project.category.id : ''}
                 />
-                <SubmitBtn />
+                <SubmitBtn text={btnText}/>
 
         </form>
     )

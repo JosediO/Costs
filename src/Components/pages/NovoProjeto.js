@@ -34,7 +34,7 @@ function NovoProjeto(){
             <div className={styles.newproject}>
                 <h1>Criar Projeto</h1>
                 <p>Crie agora seu novo projeto!</p>
-                <ProjectForms handleSubmit={createPost}/>
+                <ProjectForms handleSubmit={createPost} btnText="Criar Projeto"/>
             </div>
         </>
     )
