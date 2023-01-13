@@ -23,11 +23,11 @@
       "id": 2
     },
     {
-      "name": "Josedi Workspace",
-      "budget": "50000",
+      "name": "Workspace",
+      "budget": "60000",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "4",
+        "name": "Planejamento"
       },
       "cost": 0,
       "services": [],

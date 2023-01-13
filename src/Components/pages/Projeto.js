@@ -14,6 +14,7 @@ function Projeto(){
 
     const[project,setProject] = useState([])
     const[showProjectForm,setShowProjectForm] = useState(false)
+    const[showServiceForm,setShowServiceForm] = useState(false)
     const[message,setMessage] = useState()
     const[type,setType]=useState() 
 
@@ -34,7 +35,7 @@ function Projeto(){
     },[id])
 
 function editPost(project){
-
+    setMessage('')
     if(project.budget < project.cost){
         setMessage('O orçamento não pode ser menor que o custo do projeto!')
         setType('error')
@@ -55,11 +56,14 @@ function editPost(project){
         setType('success')
     })
     .catch((err)=>console.log(err))
-    setMessage('')
 }
 
 function toggleProjectForm(){
     setShowProjectForm(!showProjectForm)
+}
+
+function toggleServiceForm(){ 
+    setShowServiceForm(!showServiceForm)
 }
 
     return(
@@ -83,6 +87,22 @@ function toggleProjectForm(){
                             <ProjectForms handleSubmit={editPost} btnText="Concluir Edição" projectData={project} />
                         </div>
                         )}
+                    </div>
+                    <div className={styles.service_from_container}>
+                        <h2>Adcione um serviço:</h2> 
+                        <button className={styles.btn} onClick={toggleServiceForm}>
+                         {!showServiceForm ? 'Adcionar':'Fechar'}   
+                        </button>
+                        <div className={styles.project_info}>
+                            {showServiceForm &&(
+                                <div>
+                                    FORMULARIO DE SERVIÇO
+                                </div>
+                            )}
+                        </div> 
+                        <Container customClass="start">
+                            <p>Itens do serviço:</p>
+                        </Container>
                     </div>
                 </Container>
             </div>
