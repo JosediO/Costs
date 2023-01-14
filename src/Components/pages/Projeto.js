@@ -1,5 +1,7 @@
 import styles from './Projeto.module.css'
 
+import{ parse, v4 as uuidv4 } from 'uuid'
+
 import { useParams } from 'react-router-dom'
 import { useState , useEffect } from 'react';
 
@@ -7,6 +9,7 @@ import Loading from './../layout/Loading'
 import Container from './../layout/Container'
 import ProjectForms from './../Project/ProjectForms'
 import Message from './../layout/Message'
+import ServiceForm from '../Service/ServiceForm';
 
 
 function Projeto(){
@@ -31,7 +34,7 @@ function Projeto(){
             setProject(data)
         })
         .catch((err)=>console.log(err))
-        },3000)
+        },500)
     },[id])
 
 function editPost(project){
@@ -66,6 +69,39 @@ function toggleServiceForm(){
     setShowServiceForm(!showServiceForm)
 }
 
+function createService(project){
+    setMessage('')
+    
+    const lastService = project.services[project.services.length - 1]
+
+    lastService.id = uuidv4()
+
+    const lastServiceCost = lastService.cost
+
+    const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)
+
+    if(newCost > parseFloat(project.budget)){
+        setMessage("Orgçamento estourado, verifique o valor do serviço")
+        setType("error")
+        project.services.pop()
+        return false
+    }
+
+    project.cost = newCost
+
+    fetch(`http://localhost:5000/projects/${project.id}`,{
+        method:'PATCH',
+        headers:{
+            'Content-Type':'application/json',
+        },
+        body: JSON.stringify(project),
+        }).then((resp) => resp.json())
+        .then((data) =>{
+            console.log(data)
+        })
+        .catch((err) => console.log(err))
+}
+
     return(
     <>
         {project.name ? (
@@ -89,21 +125,25 @@ function toggleServiceForm(){
                         )}
                     </div>
                     <div className={styles.service_from_container}>
-                        <h2>Adcione um serviço:</h2> 
+                        <h2>Adcione um serviço</h2> 
                         <button className={styles.btn} onClick={toggleServiceForm}>
                          {!showServiceForm ? 'Adcionar':'Fechar'}   
                         </button>
                         <div className={styles.project_info}>
-                            {showServiceForm &&(
-                                <div>
-                                    FORMULARIO DE SERVIÇO
+                            {showServiceForm &&(<div>
+                                <ServiceForm
+                                handleSubmit={createService}
+                                btnText="Adcionar"
+                                projectData={project}
+                                />
                                 </div>
                             )}
                         </div> 
+                        </div>
+                    <h2>Serviços</h2>
                         <Container customClass="start">
                             <p>Itens do serviço:</p>
                         </Container>
-                    </div>
                 </Container>
             </div>
         ):(

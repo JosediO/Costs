@@ -29,8 +29,21 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 200,
+      "services": [
+        {
+          "name": "Teste",
+          "cost": "100",
+          "description": "eba",
+          "id": "5f19dadd-dabb-4f0d-87f7-c7b12b5e1ffc"
+        },
+        {
+          "name": "Teste2",
+          "cost": "100",
+          "description": "eba",
+          "id": "dd333902-c310-4cff-b2b3-ef94619c52a9"
+        }
+      ],
       "id": 3
     }
   ],
