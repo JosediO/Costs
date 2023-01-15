@@ -99,7 +99,7 @@ function createService(project){
         .then((data) =>{
             console.log(data)
         })
-        .catch((err) => console.log(err))
+        .catch(err => console.log(err))
 }
 
     return(
@@ -142,7 +142,11 @@ function createService(project){
                         </div>
                     <h2>Serviços</h2>
                         <Container customClass="start">
-                            <p>Itens do serviço:</p>
+                            {services.length > 0 &&
+                                (services.map((service) =>(
+                                    <ServiceCard/>
+                                )))
+                            }
                         </Container>
                 </Container>
             </div>
