@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Teste",
-      "budget": "50000",
+      "budget": "5000",
       "category": {
         "id": "1",
         "name": "Infra"
@@ -12,45 +12,15 @@
       "id": 1
     },
     {
-      "name": "Teste 2",
-      "budget": "50000000",
+      "name": "Josedi Workspace",
+      "budget": "122222",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "2",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
       "id": 2
-    },
-    {
-      "name": "Workspace",
-      "budget": "60000",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 300,
-      "services": [
-        {
-          "name": "Teste",
-          "cost": "100",
-          "description": "eba",
-          "id": "5f19dadd-dabb-4f0d-87f7-c7b12b5e1ffc"
-        },
-        {
-          "name": "Teste2",
-          "cost": "100",
-          "description": "eba",
-          "id": "dd333902-c310-4cff-b2b3-ef94619c52a9"
-        },
-        {
-          "name": "Teste",
-          "cost": "100",
-          "description": "eba",
-          "id": "136e1580-8459-49b4-ae8c-1ade286d4e4b"
-        }
-      ],
-      "id": 3
     }
   ],
   "categories": [
