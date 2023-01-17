@@ -9,8 +9,8 @@ function Home (){
         <section className={styles.home}>
             <h1>Bem vindo ao <span>Costs</span></h1>
             <p>O seu gerenciador de projetos!</p>
-            <img src={logoHome} alt="Costs" />
             <Linkbtn to='/novoProjeto' text="Criar Projeto"/>
+            <img src={logoHome} alt="Costs" />
         </section>
         </>
     )
