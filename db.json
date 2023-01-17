@@ -4,23 +4,12 @@
       "name": "Teste",
       "budget": "5000",
       "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "Josedi Workspace",
-      "budget": "122222",
-      "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
-      "id": 2
+      "id": 1
     }
   ],
   "categories": [

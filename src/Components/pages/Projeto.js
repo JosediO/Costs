@@ -102,6 +102,8 @@ function createService(project){
         .then((data) =>{
             console.log(data)
             setShowServiceForm(false)
+            setMessage('Serviço adcionado com sucesso!')
+            setType("success")
         })
         .catch(err => console.log(err))
 }
@@ -182,7 +184,7 @@ function removeService(id, cost) {
                                     handleRemove={removeService}
                                     />
                                 ))}
-                            {services == 0 &&
+                            {services === 0 &&
                                 <p>Não existem serviços</p>
                             }
                         </Container>
