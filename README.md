@@ -13,7 +13,6 @@
 ![GitHub Org's stars](https://img.shields.io/github/stars/josedi?style=social)
 
 ## Tecnologias utilizadas
-Teste
 - ``HTML``
 - ``CSS``
 - ``JavaScript``
