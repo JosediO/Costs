@@ -16,5 +16,5 @@
 - ``HTML``
 - ``CSS``
 - ``JavaScript``
-- ``REACT``
+- ``React``
 ##
